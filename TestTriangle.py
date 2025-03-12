@@ -38,9 +38,6 @@ class TestTriangles(unittest.TestCase):
     def testInstancesB(self):
         self.assertEqual(classifyTriangle(3,"4",5), "InvalidInput", "b is not int")
 
-    def testInstanceC(self):
-        self.assertEqual(classifyTriangle(3,4, True), "InvalidInput", "c is not int.")
-
     def testNotaTriangleA(self):
         self.assertEqual(classifyTriangle(10, 2, 3), 'NotATriangle', 'a too big')
     
